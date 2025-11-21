@@ -59,11 +59,11 @@ const Contact = () => {
           {/* <div className="flex items-center gap-3">
             <Phone className="w-5 h-5 text-primary" />
             <span>{contactDetails.phone}</span>
-          </div>
+          </div> */}
           <div className="flex items-center gap-3">
             <MapPin className="w-5 h-5 text-primary" />
             <span>{contactDetails.location}</span>
-          </div> */}
+          </div>
         </div>
       </div>
       <div>

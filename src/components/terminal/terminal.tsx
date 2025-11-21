@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Input } from "@/components/ui/input";
-import { name } from "@/lib/portfolio-data";
+import { achievements, name } from '@/lib/portfolio-data';
 
 import Welcome from "@/components/sections/welcome";
 import Help from "@/components/sections/help";
@@ -17,6 +17,7 @@ import CommandNotFound from "@/components/sections/command-not-found";
 import TerminalHeader from "./terminal-header";
 import CommandOutput from "./command-output";
 import { TypingEffect } from "../ui/typing-effect";
+import Achievements from '../sections/achievements';
 
 type HistoryItem = {
 	id: number;
@@ -79,6 +80,11 @@ const Terminal = () => {
 					return <Experience />;
 				case "education":
 					return <Education />;
+				case 'achievements':
+					if (achievements && achievements.length > 0) {
+						return <Achievements />;
+					}
+					return <CommandNotFound command={cmd} />;
 				case "contact":
 					return <Contact />;
 				case "socials":
@@ -113,6 +119,19 @@ const Terminal = () => {
 	useEffect(() => {
 		inputRef.current?.focus();
 	}, []);
+
+	const [isFocused, setIsFocused] = useState(false);
+	const [cursorVisible, setCursorVisible] = useState(true);
+
+	// Blinking cursor effect
+	useEffect(() => {
+		const interval = setInterval(() => {
+			if (isFocused) {
+				setCursorVisible((v) => !v);
+			}
+		}, 600);
+		return () => clearInterval(interval);
+	}, [isFocused]);
 
 	const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -231,16 +250,34 @@ const Terminal = () => {
 						{prompt}
 					</label>
 					<div className="relative flex-grow">
+						{/* Custom Block Cursor Overlay */}
+						<div className="absolute top-0 left-0 h-full pointer-events-none flex items-center pl-2">
+							<span className="opacity-0 whitespace-pre text-base font-code">
+								{input}
+							</span>
+							{isFocused && (
+								<div
+									className="bg-primary h-[1.2em] w-[0.6em] shadow-[0_0_8px_rgba(0,255,0,0.8)]"
+									style={{ opacity: cursorVisible ? 1 : 0 }}
+								/>
+							)}
+						</div>
 						<Input
 							ref={inputRef}
 							id="terminal-input"
 							type="text"
 							value={input}
-							onChange={(e) => setInput(e.target.value)}
+							onChange={(e) => {
+								setInput(e.target.value);
+								setCursorVisible(true);
+							}}
 							onKeyDown={handleKeyDown}
+							onFocus={() => setIsFocused(true)}
+							onBlur={() => setIsFocused(false)}
 							autoComplete="off"
 							spellCheck="false"
-							className="flex-grow bg-transparent border-none focus-visible:ring-0 focus-visible:ring-offset-0 text-base animate-blink"
+							className="flex-grow bg-transparent border-none focus-visible:ring-0 focus-visible:ring-offset-0 !text-base !pl-2 font-code caret-transparent relative z-10 selection:bg-primary/30 selection:text-foreground animate-none"
+							style={{ caretColor: "transparent" }}
 						/>
 					</div>
 				</form>

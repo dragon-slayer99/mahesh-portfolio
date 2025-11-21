@@ -31,6 +31,7 @@ Once the portfolio is running, you can use the following terminal commands:
 | `projects` | Browse portfolio projects |
 | `experience` | View professional experience timeline |
 | `education` | Display educational background |
+| `achievements` | View personal achievements and awards |
 | `contact` | Access contact form |
 | `socials` | View social media links |
 | `date` | Display current date and time |
@@ -124,6 +125,7 @@ Terminal_Portfolio/
 │   ├── components/
 │   │   ├── sections/          # Portfolio sections
 │   │   │   ├── about.tsx
+│   │   │   ├── achievements.tsx
 │   │   │   ├── contact.tsx
 │   │   │   ├── education.tsx
 │   │   │   ├── experience.tsx

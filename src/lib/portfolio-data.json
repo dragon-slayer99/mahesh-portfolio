@@ -1,130 +1,116 @@
-
 {
-  "name": "Mahesh.dev",
-  "tagline": "A terminal-inspired portfolio for a software developer.",
-  "aboutMe": "Aspiring software developer with a passion for building efficient and scalable applications. Currently exploring new technologies and honing my skills in web development and algorithms. Always eager to learn and contribute to challenging projects.",
-  "skills": [
-    "Java",
-    "Javascript",
-    "TypeScript",
-    "Python",
-    "React",
-    "tailwindcss",
-    "HTML5",
-    "Git and GitHub",
-    "DrawIO"
-  ],
-  "projects": [
-    {
-      "title": "Algo Sphere",
-      "description": "A code snippets platform that consists of almost all major algorithm code snippets in major languages (C++, Java, JavaScript, Python).",
-      "tech_stack": [
-        "Tanstack Start",
-        "TypeScript",
-        "tailwindcss"
-      ],
-      "features": [
-        "Multiple languages",
-        "Responsive",
-        "Includes all major algorithm snippets"
-      ],
-      "links": {
-        "live_demo": "https://algosphere101.netlify.app/",
-        "github_repo": "https://github.com/dragon-slayer99/Algo_Sphere"
-      }
-    },
-    {
-      "title": "Chess in Java",
-      "description": "A chess game written in Java with JFrame and Swing. This game enforces all major chess rules including castling, en passant, and pawn promotion.",
-      "tech_stack": [
-        "Java",
-        "JavaFX"
-      ],
-      "features": [
-        "Clean UI",
-        "Castling, en passant, and pawn promotion",
-        "Optimized for desktop"
-      ],
-      "links": {
-        "live_demo": null,
-        "github_repo": "https://github.com/dragon-slayer99/Chessgame.git"
-      }
-    },
-    {
-      "title": "Anime browsing website",
-      "description": "A website that allows users to browse and search for anime series and movies.",
-      "tech_stack": [
-        "Django",
-        "HTML5",
-        "CSS3",
-        "JavaScript"
-      ],
-      "features": [
-        "Clean design",
-        "Responsive",
-        "Optimized for desktop"
-      ],
-      "links": {
-        "live_demo": null,
-        "github_repo": "https://github.com/dragon-slayer99/Django_anime_project.git"
-      }
-    },
-    {
-      "title": "Calculator",
-      "description": "A calculator application that allows users to perform basic arithmetic operations.",
-      "tech_stack": [
-        "HTML5",
-        "CSS3",
-        "JavaScript"
-      ],
-      "features": [
-        "Clean design",
-        "Responsive",
-        "Optimized for desktop"
-      ],
-      "links": {
-        "live_demo": null,
-        "github_repo": "https://github.com/dragon-slayer99/Calculator.git"
-      }
-    }
-  ],
-  "experience": [
-    {
-      "role": "Fresher",
-      "company": "Open to Opportunities",
-      "duration": "Present",
-      "responsibilities": [
-        "Seeking a challenging role in software development.",
-        "Actively developing personal projects to enhance skills.",
-        "Proficient in modern web technologies and software development principles."
-      ]
-    }
-  ],
-  "education": [
-    {
-      "degree": "Bachelor of Technology in Computer Science and Engineering",
-      "institution": "Swarna Bharathi Institute of Science and Technology",
-      "year": "2022 - 2026"
-    },
-    {
-      "degree": "Pursued 11th and 12th in PCM",
-      "institution": "Sri chaitanya junior college",
-      "year": "2020 - 2022"
-    },
-    {
-      "degree": "Completed my secondary education",
-      "institution": "Lotus school",
-      "year": "2010 - 2020"
-    }
-  ],
-  "contactDetails": {
-    "email": "example@gmail.com",
-    "phone": "000-000-0000",
-    "location": "xyz street, epsilon space",
-    "social_links": {
-      "github": "https://github.com/dragon-slayer99",
-      "linkedin": "https://www.linkedin.com/in/gudooru-mahesh-6b49b3254/",
-      "leetcode": "https://leetcode.com/u/Gudoorumahesh/"
-    }
-  }
+	"name": "Mahesh.dev",
+	"tagline": "A terminal-inspired portfolio for a software developer.",
+	"aboutMe": "Aspiring software developer with a passion for building efficient and scalable applications. Currently exploring new technologies and honing my skills in web development and algorithms. Always eager to learn and contribute to challenging projects.",
+	"skills": [
+		"Java",
+		"Javascript",
+		"TypeScript",
+		"Python",
+		"React",
+		"tailwindcss",
+		"HTML5",
+		"Git and GitHub",
+		"DrawIO"
+	],
+	"projects": [
+		{
+			"title": "Algo Sphere",
+			"description": "A code snippets platform that consists of almost all major algorithm code snippets in major languages (C++, Java, JavaScript, Python).",
+			"tech_stack": ["Tanstack Start", "TypeScript", "tailwindcss"],
+			"features": [
+				"Multiple languages",
+				"Responsive",
+				"Includes all major algorithm snippets"
+			],
+			"links": {
+				"live_demo": "https://algosphere101.netlify.app/",
+				"github_repo": "https://github.com/dragon-slayer99/Algo_Sphere"
+			}
+		},
+		{
+			"title": "Chess in Java",
+			"description": "A chess game written in Java with JFrame and Swing. This game enforces all major chess rules including castling, en passant, and pawn promotion.",
+			"tech_stack": ["Java", "JavaFX"],
+			"features": [
+				"Clean UI",
+				"Castling, en passant, and pawn promotion",
+				"Optimized for desktop"
+			],
+			"links": {
+				"live_demo": null,
+				"github_repo": "https://github.com/dragon-slayer99/Chessgame.git"
+			}
+		},
+		{
+			"title": "Anime browsing website",
+			"description": "A website that allows users to browse and search for anime series and movies.",
+			"tech_stack": ["Django", "HTML5", "CSS3", "JavaScript"],
+			"features": ["Clean design", "Responsive", "Optimized for desktop"],
+			"links": {
+				"live_demo": null,
+				"github_repo": "https://github.com/dragon-slayer99/Django_anime_project.git"
+			}
+		},
+		{
+			"title": "Calculator",
+			"description": "A calculator application that allows users to perform basic arithmetic operations.",
+			"tech_stack": ["HTML5", "CSS3", "JavaScript"],
+			"features": ["Clean design", "Responsive", "Optimized for desktop"],
+			"links": {
+				"live_demo": null,
+				"github_repo": "https://github.com/dragon-slayer99/Calculator.git"
+			}
+		}
+	],
+	"experience": [
+		{
+			"role": "Fresher",
+			"company": "Open to Opportunities",
+			"duration": "Present",
+			"responsibilities": [
+				"Seeking a challenging role in software development.",
+				"Actively developing personal projects to enhance skills.",
+				"Proficient in modern web technologies and software development principles."
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "Bachelor of Technology in Computer Science and Engineering",
+			"institution": "Swarna Bharathi Institute of Science and Technology",
+			"year": "2022 - 2026"
+		},
+		{
+			"degree": "Pursued 11th and 12th in PCM",
+			"institution": "Sri chaitanya junior college",
+			"year": "2020 - 2022"
+		},
+		{
+			"degree": "Completed my secondary education",
+			"institution": "Lotus school",
+			"year": "2010 - 2020"
+		}
+	],
+	"achievements": [
+		{
+			"title": "DSA proficiency",
+			"subtitle": "completed 380problems",
+			"date": "Present",
+			"details": [
+				"solved around 380 problems on leetcode.",
+				"Participated in many weekly competitions organized by leetcode."
+			]
+		}
+	],
+	"contactDetails": {
+		"email": "guudurumahesh@gmail.com",
+		"phone": "000-000-0000",
+		"location": "Telangana, India",
+		"social_links": {
+			"github": "https://github.com/dragon-slayer99",
+			"linkedin": "https://www.linkedin.com/in/gudooru-mahesh-6b49b3254/",
+			"leetcode": "https://leetcode.com/u/Gudoorumahesh/"
+		}
+	}
 }

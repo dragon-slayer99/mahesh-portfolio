@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { education } from '@/lib/portfolio-data';
+import { GraduationCapIcon } from 'lucide-react';
 
 const Education = () => {
   return (
     <div>
       <div className="flex items-center gap-2 mb-4">
-        <span className="text-primary">[edu]</span>
+        <span className="text-primary"><GraduationCapIcon/></span>
         <h2 className="font-headline text-lg text-primary">Education</h2>
       </div>
       <div className="font-mono text-sm space-y-4">
