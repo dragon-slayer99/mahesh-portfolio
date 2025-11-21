@@ -49,6 +49,43 @@
         "live_demo": null,
         "github_repo": "https://github.com/dragon-slayer99/Chessgame.git"
       }
+    },
+    {
+      "title": "Anime browsing website",
+      "description": "A website that allows users to browse and search for anime series and movies.",
+      "tech_stack": [
+        "Django",
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "features": [
+        "Clean design",
+        "Responsive",
+        "Optimized for desktop"
+      ],
+      "links": {
+        "live_demo": null,
+        "github_repo": "https://github.com/dragon-slayer99/Django_anime_project.git"
+      }
+    },
+    {
+      "title": "Calculator",
+      "description": "A calculator application that allows users to perform basic arithmetic operations.",
+      "tech_stack": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "features": [
+        "Clean design",
+        "Responsive",
+        "Optimized for desktop"
+      ],
+      "links": {
+        "live_demo": null,
+        "github_repo": "https://github.com/dragon-slayer99/Calculator.git"
+      }
     }
   ],
   "experience": [
