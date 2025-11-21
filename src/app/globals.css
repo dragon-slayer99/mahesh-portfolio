@@ -4,8 +4,10 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%; /* Black */
-    --foreground: 128 100% 80%; /* Lighter Green for body */
+    --background: 0 0% 0%;
+    /* Black */
+    --foreground: 128 100% 80%;
+    /* Lighter Green for body */
 
     --card: 0 0% 4%;
     --card-foreground: 128 100% 80%;
@@ -13,14 +15,17 @@
     --popover: 0 0% 4%;
     --popover-foreground: 128 100% 80%;
 
-    --primary: 128 100% 50%; /* #00ff41 */
-    --primary-foreground: 0 0% 0%; /* Black for text on primary bg */
+    --primary: 128 100% 50%;
+    /* #00ff41 */
+    --primary-foreground: 0 0% 0%;
+    /* Black for text on primary bg */
 
     --secondary: 128 50% 15%;
     --secondary-foreground: 128 100% 90%;
 
     --muted: 128 30% 15%;
-    --muted-foreground: 128 40% 60%; /* Dimmer Green */
+    --muted-foreground: 128 40% 60%;
+    /* Dimmer Green */
 
     --accent: 128 50% 20%;
     --accent-foreground: 128 100% 90%;
@@ -31,11 +36,13 @@
     --border: 128 50% 20%;
     --input: 128 50% 15%;
     --ring: 128 100% 50%;
-    --radius: 0rem; /* Remove rounded corners */
+    --radius: 0rem;
+    /* Remove rounded corners */
   }
 
   .dark {
-    --background: 0 0% 0%; /* Black */
+    --background: 0 0% 0%;
+    /* Black */
     --foreground: 128 100% 80%;
 
     --card: 0 0% 4%;
@@ -44,7 +51,8 @@
     --popover: 0 0% 4%;
     --popover-foreground: 128 100% 80%;
 
-    --primary: 128 100% 50%; /* #00ff41 */
+    --primary: 128 100% 50%;
+    /* #00ff41 */
     --primary-foreground: 0 0% 0%;
 
     --secondary: 128 50% 15%;
@@ -69,12 +77,22 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground tracking-wide;
     font-feature-settings: 'liga' 1, 'calt' 1;
     font-size: 1.05rem;
     line-height: 1.6;
     text-shadow: 0 0 2px hsl(var(--primary) / 0.5);
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px hsl(var(--input)) inset !important;
+    -webkit-text-fill-color: hsl(var(--foreground)) !important;
+    transition: background-color 5000s ease-in-out 0s;
   }
 
   html {

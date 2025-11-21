@@ -30,7 +30,10 @@ const Welcome = () => {
 			<p className="text-muted-foreground">{lastLogin}</p>
 			<pre
 				className="text-primary text-glow leading-tight mb-2 whitespace-pre break-words"
-				style={{ fontSize: "clamp(0.3rem, 2vw, 1rem)" }}
+				style={{
+					fontSize: "clamp(0.3rem, 2vw, 1rem)",
+					textSizeAdjust: "100%",
+				}}
 			>
 				{asciiArt}
 			</pre>
