@@ -9,7 +9,7 @@ const jetbrains_mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://mahesh-portfolio.vercel.app"),
+	metadataBase: new URL("https://maheshportfolio101.vercel.app/"),
 	title: {
 		default: "Mahesh Gudooru | Full Stack Developer",
 		template: "%s | Mahesh Gudooru",
